@@ -1,0 +1,10 @@
+<article>
+    <h3>{{ ami.prenom + " " + ami.nom }}</h3>
+    <p>Bio : {{ ami.bio }}</p>
+    <br>
+    <p>
+        Les passions de {{ ami.prenom }}:
+    </p>
+    <p *ngFor="let passion of ami.passions" >{{ passion }} </p>
+    <p>{{ ami.aura > 0 ? "Super cool" : "Gros ringard de merde" }}</p>
+</article>
