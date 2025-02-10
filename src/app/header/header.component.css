@@ -1,0 +1,16 @@
+header {
+    width: 100svw;
+    display: flex;
+    margin: 1em;
+    align-items: flex-end;
+}
+nav {
+    margin-left: 1em;
+    display: flex;
+    align-items: flex-end;
+    gap: 1em;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+}

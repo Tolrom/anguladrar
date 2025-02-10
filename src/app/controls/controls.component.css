@@ -1,0 +1,10 @@
+section {
+    background-color: fuchsia;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section * {
+    background-color: rgb(255, 230, 0);
+}
