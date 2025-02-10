@@ -18,7 +18,14 @@ export class OneFriendComponent {
       "Etre nazi",
       "Faire semblant d'être bon à PoE2"
     ],
-    naissance: 1971
+    naissance: 1971,
+    image: "https://forward.com/wp-content/uploads/2025/01/GettyImages-2194418432-2400x1350.jpg"
+  }
+  disabled = false;
+
+  ngOnInit(){
+    setTimeout(()=> this.disabled = true, 3000);
+
   }
 
   getAge(annee: number): number {
