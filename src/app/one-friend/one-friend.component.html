@@ -1,10 +1,14 @@
 <article>
-    <h3>{{ ami.prenom + " " + ami.nom }}</h3>
-    <p>Bio : {{ ami.bio }}</p>
-    <br>
+    <h2>{{ ami.prenom + " " + ami.nom }}</h2>
+    <p><strong>Bio :</strong> {{ ami.bio }}</p>
     <p>
-        Les passions de {{ ami.prenom }}:
+        <strong>
+            Les passions de {{ ami.prenom }}:
+        </strong>
     </p>
-    <p *ngFor="let passion of ami.passions" >{{ passion }} </p>
-    <p>{{ ami.aura > 0 ? "Super cool" : "Gros ringard de merde" }}</p>
+    <ul>
+        <li *ngFor="let passion of ami.passions" >{{ passion }} </li>
+    </ul>
+    <p><strong>Réputation: </strong>{{ ami.aura > 0 ? "Super cool" : "Gros ringard de merde" }}</p>
+    <p><strong>{{ ami.prenom }}</strong> a {{ getAge(ami.naissance) }} ans.</p>
 </article>

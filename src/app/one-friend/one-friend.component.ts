@@ -17,6 +17,11 @@ export class OneFriendComponent {
       "Voler",
       "Etre nazi",
       "Faire semblant d'être bon à PoE2"
-    ]
+    ],
+    naissance: 1971
+  }
+
+  getAge(annee: number): number {
+    return 2025 - annee;
   }
 }
