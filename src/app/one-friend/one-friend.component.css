@@ -1,9 +1,29 @@
 article {
-    background-color: cadetblue;
     width: 550px;
     padding: 2em;
     border-radius: 1em;
 }
+section {
+    display: flex;
+    gap: 1em;
+}
 img {
     max-width: 500px;
 }
+
+#styleBinding {
+    padding: .5em;
+    border-radius: 1em;
+    height: fit-content;
+    position: absolute;
+    left: 1em;
+}
+
+.amiOn {
+    background-color: chartreuse;
+}
+
+.amiOff {
+    background-color: violet;
+}
+

@@ -19,12 +19,18 @@ export class OneFriendComponent {
       "Faire semblant d'être bon à PoE2"
     ],
     naissance: 1971,
-    image: "https://forward.com/wp-content/uploads/2025/01/GettyImages-2194418432-2400x1350.jpg"
+    image: "https://forward.com/wp-content/uploads/2025/01/GettyImages-2194418432-2400x1350.jpg",
+    style: ""
   }
   disabled = false;
 
+  getColor(): string {
+    return this.ami.style === "ON" ? "chartreuse" : "violet";
+  }
+
   ngOnInit(){
     setTimeout(()=> this.disabled = true, 3000);
+    this.ami.style = Math.random() > 0.5 ? "ON" : "OFF";
   }
 
   getAge(annee: number): number {

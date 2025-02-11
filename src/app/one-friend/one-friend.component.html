@@ -1,16 +1,21 @@
-<article>
-    <img [src]="ami.image" alt="">
-    <h2>{{ ami.prenom + " " + ami.nom }}</h2>
-    <p><strong>Bio :</strong> {{ ami.bio }}</p>
-    <p>
-        <strong>
-            Les passions de {{ ami.prenom }}:
-        </strong>
-    </p>
-    <ul>
-        <li *ngFor="let passion of ami.passions" >{{ passion }} </li>
-    </ul>
-    <p><strong>Réputation: </strong>{{ ami.aura > 0 ? "Super cool" : "Gros ringard de merde" }}</p>
-    <p><strong>{{ ami.prenom }}</strong> a {{ getAge(ami.naissance) }} ans.</p>
-    <button [disabled]="disabled" >Ajouter en ami</button>
-</article>
+<section>
+    <article [ngClass]="ami.style === 'ON' ? 'amiOn' : 'amiOff' " >
+        <img [src]="ami.image" alt="">
+        <h2>{{ ami.prenom + " " + ami.nom }}</h2>
+        <p><strong>Bio :</strong> {{ ami.bio }}</p>
+        <p>
+            <strong>
+                Les passions de {{ ami.prenom }}:
+            </strong>
+        </p>
+        <ul>
+            <li *ngFor="let passion of ami.passions" >{{ passion }} </li>
+        </ul>
+        <p><strong>Réputation: </strong>{{ ami.aura > 0 ? "Super cool" : "Gros ringard de merde" }}</p>
+        <p><strong>{{ ami.prenom }}</strong> a {{ getAge(ami.naissance) }} ans.</p>
+        <button [disabled]="disabled" >Ajouter en ami</button>
+    </article>
+    <div id="styleBinding" [style.backgroundColor]="getColor()">
+        Style binding
+    </div>
+</section>
