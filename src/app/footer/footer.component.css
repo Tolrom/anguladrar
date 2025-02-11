@@ -1,6 +1,10 @@
 footer {
     width: 100svw;
-    text-align: center;
-    position: fixed;
+    height: 5vh;
+    position: absolute;
     bottom: 0;
+    background-color: goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

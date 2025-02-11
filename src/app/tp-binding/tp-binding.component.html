@@ -1,0 +1,12 @@
+<section>
+    <form action="">
+        <label>
+            Nom de l'utilisateur :
+            <input [(ngModel)]="user" name="user">
+        </label>
+        <p>
+            {{ user }}
+        </p>
+        <input type="button" value="Reset input" (click)="resetInput()" [disabled]="user === ''" >
+    </form>  
+</section>

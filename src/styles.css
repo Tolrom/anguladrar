@@ -8,3 +8,17 @@ body {
     width: 100vw;
     overflow-x: hidden;
 }
+button,
+input[type="button"] {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5em;
+    background-color: greenyellow;
+    color: black;
+}
+button:disabled,
+input[type="button"]:disabled {
+    border: 1px dotted black;
+    background-color: rgb(219, 255, 165);
+    color: rgb(139, 139, 139);
+}

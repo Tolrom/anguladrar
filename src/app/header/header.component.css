@@ -2,7 +2,7 @@ header {
     width: 100svw;
     display: flex;
     margin: 1em;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 nav {
     margin-left: 1em;
@@ -13,4 +13,7 @@ nav {
 nav a {
     color: black;
     text-decoration: none;
+}
+h1 {
+    margin-bottom: 0;
 }
