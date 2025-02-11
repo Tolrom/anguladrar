@@ -9,4 +9,13 @@ import { OneFriendComponent } from '../one-friend/one-friend.component';
 })
 export class ListFriendsComponent {
 
+  bind: string = "";
+  onUpdateFriendsList(eventInput:Event): void {
+    this.bind = (<HTMLInputElement>eventInput.target).value ;
+  }
+
+  claques: number = 0;
+  onClaque(): void{
+    this.claques++;
+  }
 }

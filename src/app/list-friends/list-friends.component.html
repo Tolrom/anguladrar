@@ -1,1 +1,15 @@
-<app-one-friend></app-one-friend>
+<section>
+    <app-one-friend></app-one-friend>
+    <article>
+        <label for="">
+            Text binding :
+            <input type="text" (keyup)="onUpdateFriendsList($event)">
+            <p>{{ bind }}</p>
+        </label>
+        <label for="">
+            Bouton magique : 
+            <input type="button" value="1 clic 1 claque" (click)="onClaque()">
+            <p>{{ claques }}</p>
+        </label>
+    </article>
+</section>

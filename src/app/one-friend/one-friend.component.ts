@@ -25,7 +25,6 @@ export class OneFriendComponent {
 
   ngOnInit(){
     setTimeout(()=> this.disabled = true, 3000);
-
   }
 
   getAge(annee: number): number {

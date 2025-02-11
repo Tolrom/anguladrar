@@ -1,0 +1,14 @@
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+app-one-friend {
+    width: 50%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
