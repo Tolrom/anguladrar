@@ -8,8 +8,9 @@
         </label>
         <label for="">
             Bouton magique : 
-            <input type="button" value="1 clic 1 claque" (click)="onClaque()">
-            <p>{{ claques }}</p>
+            <input type="button" value="Supprimer la personne" (click)="onSup()">
+            <p *ngIf="target.dead">Ce bâtard de {{ target.name }} a été correctement supprimé.</p>
+            
         </label>
     </article>
 </section>
