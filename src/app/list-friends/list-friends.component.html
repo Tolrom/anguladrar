@@ -3,14 +3,14 @@
     <article>
         <label for="">
             Text binding :
-            <input type="text" (keyup)="onUpdateFriendsList($event)">
+            <input type="text" (keyup)="onUpdateFriendsList($event)" [value]="bind" >
             <p>{{ bind }}</p>
         </label>
         <label for="">
             Bouton magique : 
             <input type="button" value="Supprimer la personne" (click)="onSup()">
-            <p *ngIf="target.dead">Ce bâtard de {{ target.name }} a été correctement supprimé.</p>
-            
+            <p *ngIf="target.dead; else waiting">Ce bâtard de {{ target.name }} a été correctement supprimé.</p>
+            <ng-template #waiting >Choisissez une cible à abattre</ng-template>           
         </label>
     </article>
 </section>
