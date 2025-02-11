@@ -1,5 +1,6 @@
 article {
-    width: 550px;
+    width: 350px;
+    height: 75vh;
     padding: 2em;
     border-radius: 1em;
 }
@@ -8,7 +9,7 @@ section {
     gap: 1em;
 }
 img {
-    max-width: 500px;
+    max-width: 300px;
 }
 
 #styleBinding {
@@ -16,7 +17,7 @@ img {
     border-radius: 1em;
     height: fit-content;
     position: absolute;
-    left: 1em;
+    border: 2px solid black;
 }
 
 .amiOn {

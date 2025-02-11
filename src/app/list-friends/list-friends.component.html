@@ -1,5 +1,5 @@
 <section>
-    <app-one-friend></app-one-friend>
+    <app-one-friend *ngFor="let ami of amis" [ami]="ami"></app-one-friend>
     <article>
         <label for="">
             Text binding :
