@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { NestingComponent } from './nesting/nesting.component';
 import { ListFriendsComponent } from './list-friends/list-friends.component';
 import { TpBindingComponent } from './tp-binding/tp-binding.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 export const routes: Routes = [
     {
@@ -17,5 +18,8 @@ export const routes: Routes = [
     },{
         path: "tpbinding",
         component: TpBindingComponent
+    },{
+        path: "directives",
+        component: DirectivesComponent
     }
 ];

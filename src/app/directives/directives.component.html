@@ -1,0 +1,13 @@
+<section>
+    <input type="button" [value]="details ? 'Masquer détails' : 'Afficher détails'" (click)="onDisplay()" >
+    <p *ngIf="details">Détails</p>
+    <div 
+    *ngFor="let item of tab; index as i" 
+    [ngStyle]="{
+        'background-color': i >= 5 ? 'blue' : 'white'
+    }" 
+    [ngClass]="{'texteBlanc' : i >= 5}"
+    >
+    {{ item }}
+    </div>
+</section>
