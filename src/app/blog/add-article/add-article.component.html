@@ -1,0 +1,15 @@
+<section>
+    <h1>Ajouter un article</h1>
+    <form action="">
+        <label>
+            Titre article:
+            <input type="text" [(ngModel)]="article.title" name="title" >
+        </label>
+        <label>
+            Contenu article:
+            <textarea [(ngModel)]="article.content" name="content" ></textarea>
+        </label>
+        <input type="button" value="Ajouter article" (click)="addArticle()" >
+        <input type="button" value="Ajouter au brouillon" (click)="addBrouillon()" >
+    </form>
+</section>

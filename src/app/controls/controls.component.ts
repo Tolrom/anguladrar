@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { PlayComponent } from '../play/play.component';
-import { PauseComponent } from '../pause/pause.component';
-import { StopComponent } from '../stop/stop.component';
+import { PlayComponent } from '../nests/play/play.component';
+import { PauseComponent } from '../nests/pause/pause.component';
+import { StopComponent } from '../nests/stop/stop.component';
 
 @Component({
   selector: 'app-controls',

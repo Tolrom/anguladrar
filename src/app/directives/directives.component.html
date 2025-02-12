@@ -4,9 +4,9 @@
     <div 
     *ngFor="let item of tab; index as i" 
     [ngStyle]="{
-        'background-color': i >= 5 ? 'blue' : 'white'
+        'background-color': i >= 4 ? 'blue' : 'white'
     }" 
-    [ngClass]="{'texteBlanc' : i >= 5}"
+    [ngClass]="{'texteBlanc' : i >= 4}"
     >
     {{ item }}
     </div>

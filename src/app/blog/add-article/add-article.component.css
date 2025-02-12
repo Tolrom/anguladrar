@@ -1,0 +1,11 @@
+section {
+    background-color: rgb(255, 182, 255);
+    padding: .5em;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: .5em 0;
+}

@@ -1,9 +1,10 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { NestingComponent } from './nesting/nesting.component';
-import { ListFriendsComponent } from './list-friends/list-friends.component';
+import { HomeComponent } from './shared/home/home.component';
+import { NestingComponent } from './nests/nesting/nesting.component';
+import { ListFriendsComponent } from './friends/list-friends/list-friends.component';
 import { TpBindingComponent } from './tp-binding/tp-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { BlogControlCenterComponent } from './blog/blog-control-center/blog-control-center.component';
 
 export const routes: Routes = [
     {
@@ -19,7 +20,10 @@ export const routes: Routes = [
         path: "tpbinding",
         component: TpBindingComponent
     },{
-        path: "directives",
+        path: "tpdirectives",
         component: DirectivesComponent
+    },{
+        path: "blog",
+        component: BlogControlCenterComponent
     }
 ];

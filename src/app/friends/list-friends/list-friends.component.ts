@@ -11,6 +11,7 @@ import { NgForOf, NgIf } from '@angular/common';
 export class ListFriendsComponent {
 
   bind: string = "Elon Musk";
+  
   onUpdateFriendsList(eventInput:Event): void {
     this.bind = (<HTMLInputElement>eventInput.target).value ;
   }
