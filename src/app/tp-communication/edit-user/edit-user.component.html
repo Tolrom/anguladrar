@@ -1,0 +1,12 @@
+<form action="">
+    <h5>Formulaire d'édition</h5>
+    <label for="nom">
+        Nom :
+        <input type="text" name="nom" [(ngModel)]="user.nom" >
+    </label>
+    <label for="age">
+        Age :
+        <input type="number" name="age" [(ngModel)]="user.age" >
+    </label>
+    <input type="button" value="MàJ des données" (click)="editUser()" >
+</form>

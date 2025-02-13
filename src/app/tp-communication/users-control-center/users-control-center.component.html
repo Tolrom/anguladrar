@@ -1,0 +1,11 @@
+<section>
+    <h2>Formulaire d'édition</h2>
+    <app-user-element
+    [user]="user"
+    ></app-user-element>
+
+    <app-edit-user
+    (onEditUser)="onEditUser($event)"
+    ></app-edit-user>
+
+</section>

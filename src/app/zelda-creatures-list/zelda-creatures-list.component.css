@@ -3,6 +3,10 @@
     flex-wrap: wrap;
     gap: 1em;
     justify-content: space-around;
+    padding: 1em;
+}
+article img{
+    border: 2px solid black;
 }
 article h5 {
     transform: translateY(-1.5em);
