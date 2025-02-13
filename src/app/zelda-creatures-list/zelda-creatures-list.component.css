@@ -1,0 +1,12 @@
+.dex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-around;
+}
+article h5 {
+    transform: translateY(-1.5em);
+    margin-left: .5em;
+    font-weight: bolder;
+    color: rgb(94, 0, 0);
+}

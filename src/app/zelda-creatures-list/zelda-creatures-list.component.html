@@ -1,0 +1,23 @@
+<section>
+    <h1>Zelda BOTW Mobs List</h1>
+  
+    <!-- Loading Indicator -->
+    <div *ngIf="isLoading">
+      <div role="status">
+        <span>Loading...</span>
+      </div>
+    </div>
+  
+    <!-- Error Message -->
+    <div *ngIf="errorMessage" class="alert alert-danger text-center">
+      {{ errorMessage }}
+    </div>
+  
+    <!-- Pokémon Grid -->
+    <div *ngIf="!isLoading && !errorMessage" class="dex" >
+      <article *ngFor="let mob of mobs">
+        <img [src]="mob.image"[alt]="mob.name" />
+        <h5>{{ mob.name | titlecase }}</h5>
+      </article>
+    </div>
+</section>
